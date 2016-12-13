@@ -1,0 +1,120 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+}
+html{
+	// width: 100%;
+	//  overflow-x: scroll;
+	background-color:#333;
+}
+body{
+  // height: 80%;
+	background-color: #f0f;
+}
+.container,.box-1,.box-2{
+	display: block;
+}
+.container{
+	width: 100%;
+	height: 520px;
+	background-color: #666;
+	// padding: 10px;
+	.txt{
+		font-size: 16px;
+		line-height: 1;
+		color: #000;
+		background-color: #f00;
+		span{
+			border: 2px #0ff solid;
+			padding: 4px 0;
+
+		}
+	}
+}
+
+.box-1{
+	border:2px #f00 solid;
+	.prod-price {
+		.price {
+			font-size: 64px;
+			line-height: 1;
+			position: relative;
+			color: #f05431;
+			// background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAnCAYAAAAYRfjHAAAABGdBTUEAALGPC/xhBQAAA6tJREFUWAntVk1oE1EQntlErE1qUSxKoWDSaIs9FOlJUARRqN4ULeLvSbxpN0Kt0oq/+HNItOChePJQD60IHqy/VCteVTwoorE59FCx4k83aatNdpxJfdutaeprTRDBB8nMfm/m++a93Te7mAgHD5MNLYj0xAfFOzH68hMUYJBZszAJwx1EuBoNOI2WGRwCohLRQoQXviLPBjwbG8ynNh0JlSVH0/eJoDbDi2gZAHRHichEctR+mDgaWKywP7XCJZyOaIaQ7hh+WLKXV3pPCRBRDQ1Db7Kpqlxhs7XCIVzCqTgQ8H5GUwBqC81Nxu0bHLBJBfC+xzyI64oj7/odbAbOcLiyIk3Uw7cxpNIQsdsXMLbggdg33mq+t+z4SudtBoSbKkgSbNt+PNJcvdTBNB3JkVy3qHCLhmgJDbq5qL1uTuL152ucsFXhXGW/F3BdUfRdTGHT2VGzMpQC6uHdq3DiEK/7qxfswP1PxxSWWbG6kAn/qrrtLHZNYUKQIrt3tKmqSmG5rMRIrFtUuDKcLlHJnyQsADZ0pX2le3bzA3dVrmUQQHnq+1ivZYach2R8ZuJf5iRGYhUqHBku5lSYspO2WoFiuWrk5tLOqvscHPEjone9P/LmhYOxkwgvryVKPeCkRQ6OcMUf6dvPK+ZaskfWilWIJEiiYeBlhQkx0VhP8lBlncLEF8wtKjnTiUpuzhUrYrEJMxjhHTBd2BeP11sv1+l0+i6Llqo5Ljjqj/aF1XUuqyUsySx+jsUPO0Tc9jL+z3YrPoueZ9FmJ2YaR1tYOKxw4CTY0DolnwGnSiLxY1POTQHOSFjyk2Zli032KTeXYUCLLxI/48Z+589YWAgTjcFuAtooPvfe2/6LfROtVkCNgSNmYE0asImJMq9GjRw+a7iC/8rGY3EQkF5p5XEQF2p5gC5gwgwM8CtriW5iPuK4sQzIOR7IB9kMOd57yWPUo0270AbtrbYRGvjs8nbzQHxlEHTqCpMBFhRRx6weLssMdHIr3TYuDF0l0XiDrrCKy9kyVUCh7H/hQu1sFu9f22puIMGD3EBOcyfyZ5VVCIDfanyUWtFqDH5l0fmF0MjNiUMGq9/KHVCYGW6Z3SjfVsPmspVcgXbnSkH6BDeQtVIWF/7Ig57juiXaBFZx9O1z78+PsWe6iRLHneuDiieEwXnRWK+61rIXMfvzVisxD0F/7Tj9F87D3dOj+Le2mj/YEmpdbl9hOnZ2K/Z62rj7xOUH6L2kI/RrzA9GJmAa9osNXAAAAABJRU5ErkJggg==) no-repeat left 26px;
+			// background-size: 20px 28px;
+			.dollar{
+				display: none;
+				font-size: 35px;
+				line-height: 3;
+				font-style: normal;
+			}
+			&:after {
+				display: none;
+				font-size: 20px;
+				line-height: 1;
+				min-width: 50px;
+				padding: 0px 5px;
+				content: "";
+				text-align: center;
+				color: #fff;
+				border-radius: 5px;
+				background-color: #f04923;
+				// vertical-align: 5px;
+			}
+		}
+		.retail-price {
+			font-size: 24px;
+			line-height: 1;
+			display: block;
+			margin-top: 5px;
+			color: #999;
+			i {
+				text-decoration: line-through;
+			}
+		}
+	}
+
+}
+
+.box-2{
+	width: 100%;
+	height: 100px;
+	.wrap{
+		margin-left: 10px;
+		margin-right: 10px;
+		height: 50px;
+		background-color: #ff1234;
+	}
+}
+.box-3{
+	height: auto;;
+	background-color: #ccc;
+	.txt{
+		height: 50%;
+		background: #00f;
+	}
+}
+
+.kuga{
+	font-size: 16px;
+	ul{
+		list-style-type: circle;
+	}
+}
+.tag-test{
+	p{
+		font-size: 36px;
+	}
+}
+.box-5{
+	.am-accordion-header{
+		font-size: 16px;
+		line-height: 1.5;
+		margin-left: 50px;
+	}
+	.am-accordion-content {
+		display: none;
+	}
+}

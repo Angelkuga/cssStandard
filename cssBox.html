@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<script>
+		!function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("将根据已有的meta标签来设置缩放比例");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=a.navigator.userAgent,q=(!!p.match(/android/gi),!!p.match(/iphone/gi)),r=q&&!!p.match(/OS 9_3/),s=a.devicePixelRatio;i=q&&!r?s>=3&&(!i||i>=3)?3:s>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var t=e.createElement("div");t.appendChild(g),e.write(t.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+	</script>
+	<link rel="stylesheet" href="css/cssBox.css" media="screen" title="no title">
+	<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js">
+	</script>
+</head>
+<body>
+	<div class="container">
+		<p class="txt">
+			<span>Bacon ipsumdoloramet jowl t-bone leberkas porchetta </span>
+			<span>filet mignon pig burgdoggen ham pork chop salami tri-tip meatball cow </span>
+			<span>pork belly rump. Filet mignon hamburger shoulder brisket. Salami jowl</span>
+			<span>strip steak picanha, cupim venison capicola doner biltong short ribs drumstick tail</span>
+			<span>landjaeger. Chuck tenderloin hamburger rump tri-tip landjaeger.</span>
+		</p>
+	</div>
+	<div class="box-1">
+		<div class="prod-price">
+      <span class="price"><i class="dollar">￥</i>0123456789</span>
+      <span class="retail-price">市场价 ¥ <i>299</i></span>
+    </div>
+	</div>
+
+	<div class="box-2">
+		<div class="wrap"></div>
+	</div>
+	<div class="box-3">
+		<p class="txt">123456789</p>
+	</div>
+	<div class="kuga">
+		<ul>
+			<li>咖啡</li>
+			<li>茶</li>
+			<li>可口可乐</li>
+		</ul>
+	</div>
+	<div class="tag-test">
+		<p>键入 <dfn>quit</dfn> 来退出程序，或者键入 <em>menu</em> 来返回主菜单。<kbd>delete</kbd></p>
+		<p>键入 quit 来退出程序，或者键入 menu 来返回主菜单。delete</p>
+		<p>字符序列 <samp>ae</samp> 可能会被转换为 &aelig; 连字字符。</p>
+		<p><small> 标签和它所对应的 <big> 标签一样，但它是缩小字体而不是放大。如果被包围的字体已经是字体模型所支持的最小字号，那么 <small> 标签将不起任何作用。</p>
+	</div>
+	<div class="box-5">
+		<div class="am-accordion my-accordion">
+			<div class="am-accordion-item ">
+				<div class="am-accordion-header" role="tab" aria-expanded="true">
+					<i class="arrow"></i>
+					<!-- react-text: 421 -->标题一<!-- /react-text -->
+				</div>
+
+				<div class="am-accordion-content" role="tabpanel">
+					<div class="am-accordion-content-box">
+						<div class="am-list">
+							<div class="am-list-body">
+								<div class="am-list-item am-list-item-middle">
+									<div class="am-list-line">
+										<div class="am-list-content">子内容一</div>
+									</div>
+								</div>
+								<div class="am-list-item am-list-item-middle">
+									<div class="am-list-line">
+										<div class="am-list-content">子内容一</div>
+									</div>
+								</div>
+								<div class="am-list-item am-list-item-middle">
+									<div class="am-list-line">
+										<div class="am-list-content">子内容一</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="am-accordion-item">
+				<div class="am-accordion-header" role="tab" aria-expanded="true">
+					<i class="arrow"></i>
+					<!-- react-text: 421 -->标题二<!-- /react-text -->
+				</div>
+
+				<div class="am-accordion-content am-accordion-content-active" role="tabpanel">
+					<div class="am-accordion-content-box">
+						<div class="am-list">
+							<div class="am-list-body">
+								<div class="am-list-item am-list-item-middle">
+									<div class="am-list-line">
+										<div class="am-list-content">子内容一</div>
+									</div>
+								</div>
+								<div class="am-list-item am-list-item-middle">
+									<div class="am-list-line">
+										<div class="am-list-content">子内容一</div>
+									</div>
+								</div>
+								<div class="am-list-item am-list-item-middle">
+									<div class="am-list-line">
+										<div class="am-list-content">子内容一</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/cssBox.js">
+
+	</script>
+</body>
+
+</html>
