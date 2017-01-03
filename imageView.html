@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <style media="screen">
+    *{
+      margin:0;
+      padding: 0;
+    }
+      .container{
+        width: 100%;
+        height: auto;
+      }
+      .img-box{
+        width: 100%;
+      }
+      img{
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+        <div class="img-box">
+          <img src="http://ww4.sinaimg.cn/large/006xU9OKgw1fan3fj1fhhj30en7psnfw.jpg" alt="">
+        </div>
+      </div>
+      <script type="text/javascript">
+      var startX, endX, scale, x1, x2, y1, y2, imgLeft, imgTop, imgWidth, imgHeight,
+          one = false,
+          $touch = $('.img-box'),
+          originalWidth = $touch.width(),
+          originalHeight = $touch.height(),
+          baseScale = parseFloat(originalWidth/originalHeight);
+      $(document).on('touchstart touchmove touchend',function(event) {
+
+         var  touch1 = event.originalEvent.targetTouches[0],  // 第一根手指touch事件
+              touch2 = event.originalEvent.targetTouches[1],  // 第二根手指touch事件
+              fingers = event.originalEvent.touches.length;   // 屏幕上手指数量
+                    //手指放到屏幕上的时候，还没有进行其他操作
+                    if (event.type == 'touchstart') {
+                        if (fingers == 2) {
+                            // 缩放图片的时候X坐标起始值
+                            startX = Math.abs(touch1.pageX - touch2.pageX);
+                            one = false;
+
+                        }
+                        else if (fingers == 1) {
+                            // x1 = touch1.pageX;
+                            // y1 = touch1.pageY;
+                            // one = true;
+                        }
+
+                    }
+                    //手指在屏幕上滑动
+                    else if (event.type == 'touchmove') {
+                        if (fingers == 2) {
+                            // 缩放图片的时候X坐标滑动变化值
+                            endX = Math.abs(touch1.pageX - touch2.pageX);
+                            scale = endX - startX;
+                            $(".img-box").css("-webkit-transform", "scale(1.5)");
+                            alert("kuga 134");
+
+                        }else if (fingers == 1) {
+                            // x2 = touch1.pageX;
+                            // y2 = touch1.pageY;
+                            // if (one) {
+                            //     $me.css({
+                            //         'left' : imgLeft + (x2 - x1),
+                            //         'top' : imgTop + (y2 - y1)
+                            //     });
+                            // }
+                        }
+                    }
+                    //手指移开屏幕
+                    else if (event.type == 'touchend') {
+                        // 手指移开后保存图片的宽
+                        originalWidth = $touch.width();
+                    }
+
+                })
+
+      </script>
+  </body>
+</html>
