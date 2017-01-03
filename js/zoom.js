@@ -954,7 +954,7 @@ IScroll.prototype = {
 
 		this.originX = Math.abs(e.touches[0].pageX + e.touches[1].pageX) / 2 + this.wrapperOffset.left - this.x;
 		this.originY = Math.abs(e.touches[0].pageY + e.touches[1].pageY) / 2 + this.wrapperOffset.top - this.y;
-
+    console.log('touchstart:'+this.touchesDistanceStart +",startScale:"+this.startScale+",originX:"+this.originX+",originY:"+this.originY);
 		this._execEvent('zoomStart');
 	},
 
@@ -987,7 +987,7 @@ IScroll.prototype = {
 		y = this.originY - this.originY * lastScale + this.startY;
 
 		this.scale = scale;
-
+    console.log('distance:'+distance +",scale:"+scale+",x:"+x+",y:"+y);
 		this.scrollTo(x, y, 0);
 	},
 
